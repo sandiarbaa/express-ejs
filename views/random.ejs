@@ -7,5 +7,13 @@
   </head>
   <body>
     <h1>Random Number: <%= random %></h1>
+
+    <% if(random % 2 === 0) { %>
+    <h3>Angka Genap</h3>
+    <% } else {%>
+    <h3>Angka Ganjil</h3>
+    <% } %>
+
+    <h3>That number is: <%= random % 2 === 0 ? 'even' : 'odd' %></h3>
   </body>
 </html>
